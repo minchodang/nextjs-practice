@@ -25,6 +25,13 @@ export default function Gnb() {
         active={activeItem === 'messages'}
         onClick={goLink}
       />
+      <Menu.Item
+        name="Contact us"
+        active={activeItem === 'contact'}
+        onClick={() => {
+          router.push('/contact');
+        }}
+      />
     </Menu>
   );
 }
